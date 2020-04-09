@@ -10,6 +10,8 @@ class Solution():
 
         for sub_s in s:
             if sub_s in s_list:
+                print(s_list)
+                print(s_list.index(sub_s)) # index of sub_s
                 s_list = s_list[s_list.index(sub_s) + 1:]
             s_list.append(sub_s)
             max_length = max(max_length, len(s_list))
